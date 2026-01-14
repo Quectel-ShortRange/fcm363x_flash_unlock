@@ -1,6 +1,6 @@
 # RW612 Flash Unlock Tool
 
-[\u4e2d\u6587](README_CN.md) | English
+[中文](README_CN.md) | English
 
 ## Problem
 
@@ -70,4 +70,5 @@ blhost -p COM3,115200 -- execute 0x200012fc 0x20000000 0x20120000
   - FCM363X → device FCM363X, si JTAG
   - FGMH63X → device FGMH63X, si JTAG
 - Check `armgcc/ram_debug/output.map` for Reset_Handler address if 0x200012fc doesn't work
+
 
