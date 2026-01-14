@@ -1,0 +1,37 @@
+{
+  "version": 7,
+  "cmakeMinimumRequired": {
+    "major": 3
+  },
+  "configurePresets": [
+    {
+      "name": "flash_debug-env",
+      "displayName": "flash_debug-env",
+      "hidden": true,
+      "environment": {
+        "ARMGCC_DIR": "C:/NXP/MCUXpressoIDE_24.12.148/ide/tools",
+        "SdkRootDirPath": "d:/projects/rw61x/mcux_sdk_rw61x",
+        "POSTPROCESS_UTILITY": "C:/Users/andrew.xie/.mcuxpressotools/mcux-fixelf-14.2.2/mcux-fixelf.exe",
+        "MCUX_VENV_PATH": "C:/Users/andrew.xie/.mcuxpressotools/.venv_3_13/Scripts",
+        "PATH": "$env{MCUX_VENV_PATH}${pathListSep}$penv{PATH}",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      },
+      "cacheVariables": {}
+    },
+    {
+      "name": "flash_release-env",
+      "displayName": "flash_release-env",
+      "hidden": true,
+      "environment": {
+        "ARMGCC_DIR": "C:/NXP/MCUXpressoIDE_24.12.148/ide/tools",
+        "SdkRootDirPath": "d:/projects/rw61x/mcux_sdk_rw61x",
+        "POSTPROCESS_UTILITY": "C:/Users/andrew.xie/.mcuxpressotools/mcux-fixelf-14.2.2/mcux-fixelf.exe",
+        "MCUX_VENV_PATH": "C:/Users/andrew.xie/.mcuxpressotools/.venv_3_13/Scripts",
+        "PATH": "$env{MCUX_VENV_PATH}${pathListSep}$penv{PATH}",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      },
+      "cacheVariables": {}
+    }
+  ],
+  "buildPresets": []
+}

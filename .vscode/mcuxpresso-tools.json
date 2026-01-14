@@ -1,0 +1,15 @@
+{
+  "version": "25.3",
+  "toolchainPath": "C:/NXP/MCUXpressoIDE_24.12.148/ide/tools",
+  "linkedProjects": [],
+  "trustZoneType": "none",
+  "multicoreType": "none",
+  "projectType": "sdk-freestanding",
+  "sdk": {
+    "version": "25.06.00",
+    "path": "d:\\projects\\rw61x\\mcux_sdk_rw61x",
+    "boardId": "fcm363x",
+    "deviceId": "RW612",
+    "coreId": "cm33_RW612"
+  }
+}
