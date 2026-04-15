@@ -32,22 +32,6 @@ JLink
 
 3. 通过串口（115200 波特率）监控解锁状态
 
-**备选方案：使用 blhost（如无 J-Link）**
-
-```bash
-# 通过 USB 连接（需要 ISP 模式）
-blhost -u 0x1fc9,0x0020 -- fill-memory 0x20001000 0x4 0xC0100002
-blhost -u 0x1fc9,0x0020 -- configure-memory 0x9 0x20001000
-blhost -u 0x1fc9,0x0020 -- write-memory 0x20000000 flexspi_nor_dma_transfer.bin
-blhost -u 0x1fc9,0x0020 -- execute 0x200012fc 0x20000000 0x20120000
-
-# 通过串口连接（需要 ISP 模式）
-blhost -p COM3,115200 -- fill-memory 0x20001000 0x4 0xC0100002
-blhost -p COM3,115200 -- configure-memory 0x9 0x20001000
-blhost -p COM3,115200 -- write-memory 0x20000000 flexspi_nor_dma_transfer.bin
-blhost -p COM3,115200 -- execute 0x200012fc 0x20000000 0x20120000
-```
-
 ### 方法二：自己编译
 
 **推荐：使用 Debug（构建+运行）**
