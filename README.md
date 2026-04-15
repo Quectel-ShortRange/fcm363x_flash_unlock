@@ -30,22 +30,6 @@ JLink
 
 3. Monitor serial output (115200 baud) for unlock status
 
-**Alternative: Using blhost (if J-Link not available)**
-
-```bash
-# Via USB (requires ISP mode)
-blhost -u 0x1fc9,0x0020 -- fill-memory 0x20001000 0x4 0xC0100002
-blhost -u 0x1fc9,0x0020 -- configure-memory 0x9 0x20001000
-blhost -u 0x1fc9,0x0020 -- write-memory 0x20000000 flexspi_nor_dma_transfer.bin
-blhost -u 0x1fc9,0x0020 -- execute 0x200012fc 0x20000000 0x20120000
-
-# Via Serial Port (requires ISP mode)
-blhost -p COM3,115200 -- fill-memory 0x20001000 0x4 0xC0100002
-blhost -p COM3,115200 -- configure-memory 0x9 0x20001000
-blhost -p COM3,115200 -- write-memory 0x20000000 flexspi_nor_dma_transfer.bin
-blhost -p COM3,115200 -- execute 0x200012fc 0x20000000 0x20120000
-```
-
 ### Method 2: Build from Source
 
 **Recommended: Use Debug (build + run)**
